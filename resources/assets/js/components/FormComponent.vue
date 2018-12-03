@@ -1,18 +1,18 @@
 // FormComponent.vue
 
 <template>
-    <div class="col-md-4">
+    <div class="col-md-6">
         <form @submit.prevent="saveTweet">
             <div class="form-group">
                 <textarea
                         class="form-control"
-                        rows="8" cols="8"
+                        cols="12"
                         maxlength="130"
                         v-model="body"
                         required>
                 </textarea>
             </div>
-            <div class="form-group">
+            <div class="form-group pull-right">
                 <button class="btn btn-primary">
                     Tweet
                 </button>

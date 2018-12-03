@@ -43403,7 +43403,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "col-md-4" }, [
+  return _c("div", { staticClass: "col-md-6" }, [
     _c(
       "form",
       {
@@ -43426,7 +43426,7 @@ var render = function() {
               }
             ],
             staticClass: "form-control",
-            attrs: { rows: "8", cols: "8", maxlength: "130", required: "" },
+            attrs: { cols: "12", maxlength: "130", required: "" },
             domProps: { value: _vm.body },
             on: {
               input: function($event) {
@@ -43449,7 +43449,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "form-group" }, [
+    return _c("div", { staticClass: "form-group pull-right" }, [
       _c("button", { staticClass: "btn btn-primary" }, [
         _vm._v("\n                Tweet\n            ")
       ])
@@ -43533,6 +43533,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 
 
@@ -43565,8 +43566,12 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "col-md-8 posts" },
+    { staticClass: "col-md-6 posts" },
     [
+      _c("a", { staticClass: "btn btn-success", attrs: { href: "/users" } }, [
+        _vm._v("All Users")
+      ]),
+      _vm._v(" "),
       !_vm.posts.length ? _c("p", [_vm._v("No posts")]) : _vm._e(),
       _vm._v(" "),
       _vm._l(_vm.posts, function(post) {
